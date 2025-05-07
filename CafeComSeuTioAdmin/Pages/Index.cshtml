@@ -9,6 +9,15 @@
     <hr />
     <div class="row">
         <div class="col-md-6">
+            <table class="table-striped table table-bordered">
+                @foreach (var item in Model.listSurvey)
+                {
+                    <tr>
+                        <td>@item.Question</td>
+                        <td>@item.Answer</td>
+                    </tr>
+                }
+            </table>
             
         </div>
         <div class="col-md-6">
