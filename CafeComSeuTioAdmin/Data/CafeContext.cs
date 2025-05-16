@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CafeComSeuTioAdmin.Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CafeComSeuTioAdmin.Data
 {
@@ -6,5 +7,6 @@ namespace CafeComSeuTioAdmin.Data
     {
         public CafeContext(DbContextOptions options) : base(options) { }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductDetail> ProductDetail { get; set; }
     }
 }
