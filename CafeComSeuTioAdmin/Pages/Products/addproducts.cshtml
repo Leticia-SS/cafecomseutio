@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <!--<div asp-validation-summary="All"></div>-->
             <div class="mb-3">
                 <label asp-for="newProduct.Name">Name</label>
@@ -36,6 +36,11 @@
                     <option value="Food">Food</option>
                 </select>
                 <span asp-validation-for="newProduct.Category"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="newProduct.Upload">Updload</label>
+                <input asp-for="newProduct.Upload" class="form-control" />
+                
             </div>
             <button class="btn btn-success">Create</button>
         </form>
