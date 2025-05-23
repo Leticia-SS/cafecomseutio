@@ -6,7 +6,7 @@ namespace CafeComSeuTioAdmin.Pages.Products
 {
     public class addproductsModel : PageModel
     {
-        //private CafeContext cafeContext;
+        private CafeContext cafeContext;
         private IProductRepository _productRepository;
         private IWebHostEnvironment webEnv;
 
@@ -21,9 +21,9 @@ namespace CafeComSeuTioAdmin.Pages.Products
 
         //public addproductsModel(CafeContext context, IWebHostEnvironment webEnv) 
         //{
-        public addproductsModel(IProductRepository Irepository, IWebHostEnvironment webEnv)
+        public addproductsModel(IProductRepository Irepository, IWebHostEnvironment webEnv, CafeContext context)
         { 
-            //this.cafeContext = context;
+            this.cafeContext = context;
             _productRepository = Irepository;
             this.webEnv = webEnv;
         }
@@ -53,6 +53,9 @@ namespace CafeComSeuTioAdmin.Pages.Products
                         await newProduct.Upload.CopyToAsync(fileStream);
                     }
                 }
+
+                cafeContext.Add<Product>(newProduct);
+                cafeContext.SaveChanges();
 
             }
 
