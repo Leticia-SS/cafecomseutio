@@ -26,12 +26,12 @@
 
         Product IProductRepository.GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Products.First(x => x.Id == id);
         }
 
         void IProductRepository.Update(Product product)
         {
-            throw new NotImplementedException();
+            return _context.Products.Where(x => Delete)
         }
     }
 }
