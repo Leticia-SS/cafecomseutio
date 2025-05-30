@@ -6,6 +6,49 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Pages\NovaPasta1\**" />
+    <Compile Remove="Pages\NovaPasta2\**" />
+    <Compile Remove="Pages\NovaPasta3\**" />
+    <Compile Remove="Pages\NovaPasta4\**" />
+    <Compile Remove="Pages\NovaPasta5\**" />
+    <Compile Remove="Pages\NovaPasta6\**" />
+    <Compile Remove="Pages\NovaPasta7\**" />
+    <Compile Remove="Pages\NovaPasta\**" />
+    <Content Remove="Pages\NovaPasta1\**" />
+    <Content Remove="Pages\NovaPasta2\**" />
+    <Content Remove="Pages\NovaPasta3\**" />
+    <Content Remove="Pages\NovaPasta4\**" />
+    <Content Remove="Pages\NovaPasta5\**" />
+    <Content Remove="Pages\NovaPasta6\**" />
+    <Content Remove="Pages\NovaPasta7\**" />
+    <Content Remove="Pages\NovaPasta\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta1\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta2\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta3\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta4\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta5\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta6\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta7\**" />
+    <EmbeddedResource Remove="Pages\NovaPasta\**" />
+    <None Remove="Pages\NovaPasta1\**" />
+    <None Remove="Pages\NovaPasta2\**" />
+    <None Remove="Pages\NovaPasta3\**" />
+    <None Remove="Pages\NovaPasta4\**" />
+    <None Remove="Pages\NovaPasta5\**" />
+    <None Remove="Pages\NovaPasta6\**" />
+    <None Remove="Pages\NovaPasta7\**" />
+    <None Remove="Pages\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Products\Editar.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Products\Editar.cshtml" />
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
@@ -18,6 +61,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
 
 	</ItemGroup>
 
