@@ -31,7 +31,9 @@
 
         void IProductRepository.Update(Product product)
         {
-            return _context.Products.Where(x => Delete)
+            //return _context.Products.Where(x => Delete)
+            throw new NotImplementedException();
+
         }
     }
 }

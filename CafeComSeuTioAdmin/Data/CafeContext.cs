@@ -1,8 +1,19 @@
 ﻿using CafeComSeuTioAdmin.Data.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace CafeComSeuTioAdmin.Data
 {
+    public class IdentidadeContext : IdentityDbContext
+    {
+        public IdentidadeContext(DbContextOptions<IdentidadeContext> options) 
+            : base(options) 
+        {
+            
+        }
+    }
+
     public class CafeContext : DbContext
     {
         public CafeContext(DbContextOptions options) : base(options) { }
